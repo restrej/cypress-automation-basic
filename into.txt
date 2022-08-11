@@ -1,0 +1,24 @@
+Bienvenidos al curso de cypress
+
+1. -npm init
+
+2. -npm install cypress --save-dev --> instalación
+2.1->
+
+3. -Instalar Npx https://www.npmjs.com/package/npx
+//NPX --> nos ayuda a que los comandos de node sean mucho mas cortos
+3.1--> npm install -g npx
+3.2--> npx cypress install --force --> Forzar la instalación
+
+3. -npx cypress open
+4. -Parar consola --> ctrl + c
+5. cy.visit("") //este comando nos sirve para mirar que pagina vamos a visitar
+6. cy.wait(3000)//sirve para poner algo de tiempo, y esta en milisegundos en este caso 3 segundos
+7. cy.get("") //Para ingresar el identificador del elemento (# -> es para los tipo id), (. -> es para los tipo class)
+8. type("") //Para ingresar un valor a un campo desde el teclado
+9. Para utilizar los identificadores de tipo XPATH se debe instalar un plugin npm install -D cypress-xpath, y luego ingresar el siguiente comando
+   require('cypress-xpath');
+
+Comandos:
+- Regresion: npx cypress run --spec "cypress/e2e/**/regression*"
+- Ejecutar test levantando el browser: npx cypress run --browser chrome --headed --spec cypress/e2e/test_automation_instalador/Test_login.cy.js

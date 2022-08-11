@@ -1,0 +1,6 @@
+{
+    "baseUrl": "https://dev-smartis-manager.prosegur.cloud/#/dasboardIoT",
+    "env": {
+        "environment": "dev"
+    }
+}

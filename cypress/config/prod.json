@@ -1,0 +1,6 @@
+{
+    "baseUrl": "https://manager.smartiot.prosegur.com/#/dasboardIoT",
+    "env": {
+        "environment": "prod"
+    }
+}
