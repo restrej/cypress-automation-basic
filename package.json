@@ -9,12 +9,13 @@
     "cypress:runLogin": "cypress run --spec cypress/e2e/test_automation_instalador/Test_login.cy.js",
     "cypress:runLoginChrome": "cypress run --browser chrome --spec cypress/e2e/test_automation_instalador/Test_login.cy.js",
     "cypress:runLoginChromeHeadless": "cypress run --headless --browser chrome --spec cypress/e2e/test_automation_instalador/Test_login.cy.js",
-    "cy:open:prod": "cypress open --env configFile=prod",
+    "cycypress:open:prod": "cypress open --env configFile=prod",
     "cypress:open:pre": "cypress open --env configFile=pre",
     "cy:open:dev": "cypress open --env configFile=dev",
-    "test:prod": "cypress run --env configFile=prod",
-    "test:pre": "cypress run --env configFile=pre",
-    "test:dev": "cypress run --env configFile=dev"
+    "test:prod": "cypress run --browser chrome --headed --spec cypress/e2e/test_automation_instalador/Test_login.cy.js --config baseUrl=https://manager.smartiot.prosegur.com/#/dasboardIoT --env environment=prod",
+    "test:pre": "cypress run --browser chrome --headed --spec cypress/e2e/test_automation_instalador/Test_login.cy.js --config baseUrl=https://pre-smartis-manager.prosegur.cloud/#/dasboardIoT --env environment=pre",
+    "test:dev": "cypress run --browser chrome --headed --spec cypress/e2e/test_automation_instalador/Test_login.cy.js --config baseUrl=https://dev-smartis-manager.prosegur.cloud/#/dasboardIoT --env environment=dev",
+    "test:prueba": "cypress open --config baseUrl=https://pre-smartis-manager.prosegur.cloud/#/dasboardIoT --env environment=pre"
   },
   "repository": {
     "type": "git",
